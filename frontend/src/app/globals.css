@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.blur-cover {
+  backdrop-filter: blur(12px)  saturate(1.7);
+  --tw-bg-opacity: 0.05;
+  -webkit-backdrop-filter: blur(20px) saturate(1.7);
+  border: 1px rgb(42 42 42 / var(--tw-border-opacity)) solid;
+  border-radius: 0.5rem;
+}
